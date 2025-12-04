@@ -96,7 +96,7 @@ app.post("/subscribers", function () {
          age: "21",
          paid: "True"
       });
-      console.log("Successful", newSubscriber);n
+      console.log("Successful", newSubscriber);
    }
    catch (error) {
       console.log('failure')
