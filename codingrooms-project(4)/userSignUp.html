@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <title> Sign up! </title>
+   <link rel="stylesheet" href="css.css">
+</head>
+
+<body id="signUpBackground">
+   <nav class="navbar navbar-dark bg-dark px-4">
+      <div class="container-fluid d-flex justify-content-between">
+         <a class="navbar-brand text-white" href="index.html">PSU Magazine</a>
+         <div>
+            <a class="nav-link d-inline text-white" href="index.html">Home |</a>
+            <a class="nav-link d-inline text-white" href="userSignUp.html">Subscribe |</a>
+            <a class="nav-link d-inline text-white" href="jQSearcher.html">Search JSON |</a>
+            <a class="nav-link d-inline text-white" href="readLater.html">Read Later |</a>
+            <a class="nav-link d-inline text-white" href="articlePublication.html">Filter |</a>
+            <a class="nav-link d-inline text-white" href="submissionPage.html">Submit an Article |</a>
+            <a class="nav-link d-inline text-white" href="editorialPage.html">Edit Request Form </a></div>
+      </div>
+   </nav>
+   <div class="box">
+      <h1>Sign up</h1>
+      
+      <form id="signUpForm">
+               <div class="fc">
+         <p class="firstName uspText">First name</p>
+         <input type = "text"class = "form-control"id = "firstName" placeholder = " "user/>
+               </div>
+               <div class="lc">
+         <p class="lastName uspText">Last name</p>
+         <input type = "text" class = "form-control" id = "lastName"placeholder = " "user/>
+               </div>
+               <div class="ec">
+         <p class="email-t uspText">Email</p>
+         <input type = "email" class = "form-control"id = "email" placeholder = " "user/>
+               </div>
+               <div class="ac">
+         <p class="addressButton-t uspText">Address</p>
+         <input type = "text" class = "form-control"id = "address" placeholder = " "user/>
+               </div>
+            <br>
+            <br>
+                           <div class="agebtn">
+            <select id = "age" name = "age" class="form-select">
+    <option value = "">Select your age</option>
+    <option value = "0-16">Under 16</option>
+    <option value = "16+"">16+</option>
+</select>
+                           </div>
+<div class="form-check">
+   <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+   <label class="form-check-label" for="flexCheckIndeterminate">Get a paid Subscription?</label>
+</div>
+         </p>
+         <p>
+            <button type="submit" class="btn btn-primary">Create your account!</button>
+         </p>
+      </form>
+   </div>
+   <script src="javascript.js"></script>
+</body>
+
+</html>

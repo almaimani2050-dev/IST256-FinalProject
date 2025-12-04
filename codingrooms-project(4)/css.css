@@ -1,0 +1,161 @@
+#heading {
+   color: rgb(11, 11, 130);
+   font-size: 44px;
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin-bottom: 10px;
+}
+.titleName
+{
+   color: rgb(11, 11, 130);
+   font-size: 22px;
+   text-align: center;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin-bottom: 10px;
+}
+html,
+body {
+   height: 100%;
+}
+.readLaterFix
+{
+   text-align: center;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+}
+.navbar {
+   background-color: black;
+   padding: 10px;
+}
+
+
+#headBack {
+   background-color: lightgray;
+}
+
+#pic1 {
+   width: 300px;
+   height: 200px;
+}
+
+#pic2 {
+   width: 300px;
+   height: 200px;
+}
+
+.hyperGrid {
+   text-align: center;
+}
+
+#link,
+#placeholder {
+   text-align: center;
+}
+
+.grid2 {
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: auto;
+   justify-content: center;
+   margin-bottom: 5px;
+   text-align: center;
+}
+
+.grid1 {
+   text-align: center;
+}
+
+.subscribeForm {
+   text-align: center;
+}
+
+
+/*  ------------------User Sign up Page------------------------  */
+
+#signUpBackground{
+    background-color: rgb(209, 216, 162)
+}
+
+.box{
+    border-radius: 15px;
+    background-color: rgb(233, 228, 228);
+    box-shadow: 0 4px 5px;
+    text-align: center;
+    padding: 2em;
+    margin: 5% auto 10%;
+    border-color: grey;
+    border-width: 10px;
+    border-style: solid;
+    width: 35%;
+}
+.firstName{
+    margin-right: 330px;
+    margin-bottom: -1px;
+}
+.lastName{
+    margin-right: 330px;
+    margin-bottom: -1px;
+}
+.email-t{
+   margin-right: 360px;
+    margin-bottom: -1px;
+}
+.addressButton-t {
+   margin-right: 340px;
+   margin-bottom: -1px;
+}
+
+.form-control{
+    width: 95%;
+    height: 5%;
+    align-items: center;
+}
+.uspText{
+   font-weight: bold;
+   padding-top: 5%;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: .8vw;
+}
+.btn{
+    width: 80%;
+    height: 12%;
+    color: aliceblue;
+    font-weight: bold;
+    background: linear-gradient(to bottom,rgb(102,87,4),rgb(79,68,3));
+    border-radius: 15px;
+    font-size: large;
+    margin-top: 5%;
+    box-shadow: 0 6px 7px rgb(205, 121, 121);
+    }
+.fc,.lc,.ec,.ac {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   }
+
+  .form-check{
+   display: flex;
+   margin-top: 5% auto;
+   justify-content: center;
+   align-items: center;
+   transform: scale(1.5);
+  }
+  .form-check-label{
+   font-size: 70%;
+   vertical-align: middle;   
+ }
+  .agebtn{
+   margin-bottom: 5%;
+  }
+  .box form{
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   width: 100%;
+  }
+  .btn-primary{
+   height: 17%;
+  }

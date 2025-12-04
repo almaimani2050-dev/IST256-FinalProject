@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <title>jQuery Searcher</title>
+</head>
+
+<body>
+   <nav class="navbar navbar-dark bg-dark px-4">
+      <div class="container-fluid d-flex justify-content-between">
+         <a class="navbar-brand text-white" href="index.html">PSU Magazine</a>
+         <div>
+            <a class="nav-link d-inline text-white" href="index.html">Home |</a>
+            <a class="nav-link d-inline text-white" href="userSignUp.html">Subscribe |</a>
+            <a class="nav-link d-inline text-white" href="jQSearcher.html">Search JSON |</a>
+            <a class="nav-link d-inline text-white" href="readLater.html">Read Later |</a>
+            <a class="nav-link d-inline text-white" href="articlePublication.html">Filter |</a>
+            <a class="nav-link d-inline text-white" href="submissionPage.html">Submit an Article |</a>
+            <a class="nav-link d-inline text-white" href="editorialPage.html">Edit Request Form</a>
+         </div>
+      </div>
+   </nav>
+
+   <div class="container mt-5">
+      <h3>Search Users</h3>
+      <div class="mb-3">
+         <input type="number" id="searchID" class="form-control" placeholder="Enter ID" style="max-width: 300px;">
+      </div>
+      <button type="button" id="searchIDButton" class="btn btn-primary">Search JSON DB</button>
+      <div id="result" class="mt-3"></div>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script>
+      $(document).ready(function () {
+         $('#searchIDButton').click(function() {
+            let searcher = Number($('#searchID').val());
+            let subscribers = JSON.parse(localStorage.getItem("subscribers")) || [];
+            let foundIt = false;
+            let output = '';
+
+            for (let i = 0; i < subscribers.length; i++) {
+               if (subscribers[i].id === searcher) {
+                  let sub = subscribers[i];
+                  output = `<div class="alert alert-success">
+                     <strong>ID:</strong> ${sub.id}<br>
+                     <strong>Name:</strong> ${sub.fullName}<br>
+                     <strong>Email:</strong> ${sub.email}<br>
+                     <strong>Address:</strong> ${sub.address}<br>
+                     <strong>Age:</strong> ${sub.age}<br>
+                     <strong>Paid:</strong> ${sub.paid}
+                  </div>`;
+                  foundIt = true;
+                  break;
+               }
+            }
+
+            if (foundIt) {
+               $('#result').html(output);
+            } else {
+               $('#result').html('<div class="alert alert-danger">Person is not in database.</div>');
+            }
+         });
+      });
+   </script>
+</body>
+
+</html>
