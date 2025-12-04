@@ -1,0 +1,13 @@
+{
+   "projectTheme": "PSU Magazine Subscriber Management",
+   "subscribers": [
+      {
+         "id": 1,
+         "fullName": "Sample User",
+         "email": "sample@example.com",
+         "address": "State College, PA",
+         "age": "21",
+         "paid": "True"
+      }
+   ]
+}
